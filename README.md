@@ -1,4 +1,4 @@
-# Board Infinity API
+# NODE.js API
 
 #### How to run locally
 
