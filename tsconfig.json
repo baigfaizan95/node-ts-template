@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "noUnusedLocals": true,
+    "removeComments": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "pretty": true,
+    "sourceMap": true,
+    "strict": false,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "strictNullChecks": true,
+    "preserveConstEnums": true,
+    "experimentalDecorators": true,
+    "outDir": "./build",
+    "baseUrl": "./src",
+    "target": "es6",
+    "lib": ["es2017", "dom"],
+    "paths": {
+      "@controllers/*": ["./controllers/*"],
+      "@configs": ["./configs/index"],
+      "@models/postgres": ["./models/postgres/index"],
+      "@models/mongo": ["./models/mongodb/index"],
+      "@logger": ["./utils/logger/index"],
+      "@joiSchema/*": ["./JoiSchema/*"],
+      "@joiSchema/postgres": ["./JoiSchema/postgres/index"],
+      "@utils": ["./utils/index"],
+      "@middlewares": ["./middlewares/index"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
